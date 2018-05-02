@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<style>
+#sliderbox{
+	position: relative;
+	width: 24000px;
+	animation-name: slideranimation;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+
+}
+#sliderbox img{
+	float: left;
+}
+@keyframes slideranimation{
+	0%
+	{
+		left: 0px;
+	}
+	45%
+	{
+		left: -1600px;
+	}
+	90%
+	{
+		left: -3000px;
+	}
+
+	
+	
+}
+</style>
+</head>
+<body>
+<div id="container">
+	<div id="sliderbox">
+		<img src="a.jpg" width="1400px" height="575px" >
+		<img src="b.jpg" width="1400px" height="575px">
+		<img src="c.jpg" width="1400px" height="575px">
+	</div>
+</div>
+</body>
+</html>

@@ -1,27 +1,55 @@
 <!doctype html>
 <html>
-<body>
+<head>
+<style>
+#apple{
+margin: 2px;
+background: red;
+}
+input[type=text],input[type=password]{
+	width: 50%;
+	padding: 12px 20px;
+	border: 2px solid #ccc;
+}
+button {
+background-color: purple;
+padding 14px 20px;
+margin 8px 0;
+width: 52%;
+height: 50px;
+}
+
+button:hover{
+ opacity: 0.5;
+}
+#a{
+font-size: 30px;
+color: white;
+}
+</style>
+</head>
+<body alink="purple" vlink="purple" link="purple" bgcolor="grey" >
 <form align="center" border="3px">
-	<h1> Welcome To My Website </h1>
-	<br>
-	<br>
+	<h1 style="color:brown"> Welcome To My Website </h1>
 	<hr>
 	<br>
-	<p>
+	<p id="apple">
+	<br>
 	<input type="text" autocomplete required size="16" placeholder="Username" Autofocus pattern="[^'\x22]+" title="Single and Double Quotes are not allowed.">
 	<br>
 	<br>
 	<input type="password" required size="16" placeholder="Password" maxlength="16" pattern="[^'\x22]+" title="Single and Double Quotes are not allowed.">
 	<br>
 	<br>
+	<button type="Submit" align="center"><a href="loggedin.html"><span id="a">SIGN IN</span></a></button>
+	<br>
+	<br>
+	</p id="banana">
+	<p>
 	<hr>
 	<br>
-	NEW USER
-	<br>
-	<br>
-	<button type="submit" align="center">
-	<a href="signup.html">JOIN IN</a>
-	</button>
+	<marquee direction="right" behavior="alternate" scrollamount="20"><h3>NEW USER</h3> </marquee>
+	<input type="button" align="center" value="JOIN IN" onclick="signup.html">
 	</p>
 	
 </form>
