@@ -1,24 +1,29 @@
 <!doctype html>
 <html>
 <body>
-<form align="center">
-	<fieldset height="500" width="500">
-	<marquee><h1> Welcome To My Website </h1></marquee>
+<form align="center" border="3px">
+	<h1> Welcome To My Website </h1>
 	<br>
 	<br>
 	<hr>
 	<br>
 	<p>
-	<input type="text" autocomplete required size="16" placeholder="Username" Autofocus>
+	<input type="text" autocomplete required size="16" placeholder="Username" Autofocus pattern="[^'\x22]+" title="Single and Double Quotes are not allowed.">
 	<br>
 	<br>
-	<input type="password" required size="16" placeholder="Password">
+	<input type="password" required size="16" placeholder="Password" maxlength="16" pattern="[^'\x22]+" title="Single and Double Quotes are not allowed.">
 	<br>
 	<br>
 	<hr>
-	<input type="submit" value="SUBMIT" align="center">
+	<br>
+	NEW USER
+	<br>
+	<br>
+	<button type="submit" align="center">
+	<a href="signup.html">JOIN IN</a>
+	</button>
 	</p>
-	</fieldset>
+	
 </form>
 </body>
 </html>
